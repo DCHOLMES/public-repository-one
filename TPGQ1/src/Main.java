@@ -9,6 +9,8 @@ public class Main {
 	// constants
 	final static String WELCOME = "Hello! Please choose from the following Options\n1. Reverse a string\n2. Shuffle a string\n3. Exit";
 	final static String INPUT_PROMPT = "Please enter a string";
+	final static String INVALID = "ERROR! Invalid user input, please select from option 1, 2, or 3";
+	final static String TERMINATE = "Terminating program...";
 	final static String REVERSE = "1";
 	final static String SHUFFLE = "2";
 	final static String EXIT = "3";
@@ -55,6 +57,12 @@ public class Main {
 			} else if(input.equals(EXIT)) {
 				
 				exit = true;
+				
+				System.out.println(TERMINATE);
+				
+			} else {
+				
+				System.out.println(INVALID);
 			}
 		}
 	}

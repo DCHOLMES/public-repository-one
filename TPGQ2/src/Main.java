@@ -6,15 +6,15 @@ import java.util.Scanner;
 
 public class Main {
 
-	static final String WELCOME = "Hello! Please enter a series of values seperated by the ',' character";
-	
+	static final String WELCOME = "Hello! Please enter a series of integers seperated by the ',' character (no spaces)";
+	static final String ERROR = "ERROR! The values supplied by the user could not be parsed, only integers will be accepted each seperated by the ',' character";
+	static final String TERMINATE = "Terminating program...";
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
 		MedianCalculator calc;
 		String input  = "";
 		String[] values;
-		int[] range;
 		
 		System.out.println(WELCOME);
 		
@@ -25,6 +25,8 @@ public class Main {
 		calc = new MedianCalculator(StringsToInts(values));
 		
 		System.out.println(calc.GetMedian());
+		
+		System.out.println(TERMINATE);
 	}
 	
 	// StringsToInts method, converts the user input values into an integer array.
@@ -32,11 +34,18 @@ public class Main {
 		
 		int[] output = new int[values.length];
 				
-		for(int i = 0 ; i < values.length ; i++) {
+		try {
 			
-			output[i] = Integer.parseInt(values[i]);
+			for(int i = 0 ; i < values.length ; i++) {
+				
+				output[i] = Integer.parseInt(values[i]);
+			}
+			
+		} catch(NumberFormatException e) {
+			
+			System.out.println(ERROR + "\n" + TERMINATE);
+			System.exit(1);
 		}
-		
 		return output;
 	}
 }
