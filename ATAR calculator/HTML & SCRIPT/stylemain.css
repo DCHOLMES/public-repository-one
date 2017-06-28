@@ -1,0 +1,129 @@
+#main{	
+	background-image: url("img/bgtexture.jpg");
+	background-size: stretch;
+	
+}
+
+#header{	
+	background-image: url("img/gradientheader.jpg");
+	background-size: stretch;
+	padding-top: 10px;
+	padding-bottom: 40px;
+	margin-bottom: 20px;
+	
+	text-align: center;
+	
+}
+
+#content_wrapper{
+	height: 100%;
+}
+
+#content{
+	text-align: center;
+	background-color: #87A9DB;
+	border: 2px solid #6B84A8;
+    border-radius: 25px;
+	
+}
+
+#calculator_form{
+	display: inline-block;	
+	
+}
+
+#calculator_table{
+	vertical-align: middle;
+	text-align: center;
+	font-size: 20px;
+}
+
+.footer{
+	background-image: url("img/gradientheader.jpg");
+	
+	height: 100%;
+	width: 100%;
+	height: 60px;
+	
+	text-align: center;
+}
+
+#footspan{
+	color: white;
+	font-weight: bold;
+}
+
+.ajaxl{
+	color: white;
+	font-weight: bold;
+}
+
+.ajaxl:hover{
+	cursor: pointer; cursor: hand;
+	
+	color: blue;
+	background-color: orange;
+}
+
+#title{
+	cursor: pointer; cursor: hand;
+	
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.rawScore{
+	width: 50px;
+}
+
+.red {
+	color: red;
+}
+
+.grey{
+	color: #C0C0C0;
+}
+
+.green {
+	color: green;
+}
+
+#uni_courses {
+	text-align: left;
+	background: white;
+}
+
+#courses_tab {
+	table-layout: fixed;
+}
+
+#next_butt {
+	margin-top: 3%;
+	margin-left: 10%;
+	width: 15%;
+}
+
+#course_table {
+	width: 100%;	
+}
+
+#prev_butt {
+	margin-top: 3%;
+	margin-right: 10%;
+	width: 15%;
+}
+
+.course_table_header {
+	background-color: lightgrey;
+	cursor: default;
+}
+
+#class {
+	border:2px solid #456879;
+	border-radius:10px;
+}
+
+#results_bit{
+	font-size: 16px;
+	font-weight: bold;
+}
